@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(255, 249, 238);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  background-color: rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10em 4em auto 7em;
+  gap: 0.25em;
+}
+
+.wrapper header {
+  grid-column: 1/4;
+}
+
+.wrapper nav {
+  grid-column: 1/4;
+}
+
+.wrapper main {
+  grid-column: 1/3;
+}
+
+.wrapper aside {
+  grid-column: 3/4;
+}
+
+.wrapper footer {
+  grid-column: 1/4;
+}
